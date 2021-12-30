@@ -39,5 +39,4 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script:           
-          nohup ~/app &
-          lsof -i:1323   
+          sh ~/deploy.sh
